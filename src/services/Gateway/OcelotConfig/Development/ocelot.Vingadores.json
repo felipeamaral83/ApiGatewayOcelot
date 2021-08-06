@@ -1,0 +1,16 @@
+{
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "CapitaoAmerica",
+        "HomemDeFerro",
+        "Hulk",
+        "PanteraNegra",
+        "Thor",
+        "ViuvaNegra"
+      ],
+      "Description": "Invoca todos os vingadores de uma única vez.",
+      "UpstreamPathTemplate": "/vingadores"
+    }
+  ]
+}

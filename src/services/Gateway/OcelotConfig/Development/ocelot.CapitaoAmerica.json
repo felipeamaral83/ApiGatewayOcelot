@@ -10,8 +10,9 @@
         }
       ],
       "UpstreamPathTemplate": "/capitaoamerica",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "Key": "capitaoamerica"
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "CapitaoAmerica",
+      "SwaggerKey": "CapitaoAmerica"
     }
   ]
 }

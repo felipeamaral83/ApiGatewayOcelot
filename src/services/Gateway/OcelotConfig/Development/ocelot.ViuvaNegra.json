@@ -10,8 +10,9 @@
         }
       ],
       "UpstreamPathTemplate": "/viuvanegra",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "Key": "viuvanegra"
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "ViuvaNegra",
+      "SwaggerKey": "ViuvaNegra"
     }
   ]
 }

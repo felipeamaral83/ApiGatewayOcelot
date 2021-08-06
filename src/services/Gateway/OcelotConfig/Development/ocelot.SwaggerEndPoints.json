@@ -1,0 +1,64 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "CapitaoAmerica",
+      "Config": [
+        {
+          "Name": "Capitao America",
+          "Version": "v1",
+          "Url": "https://localhost:4051/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "HomemDeFerro",
+      "Config": [
+        {
+          "Name": "Homem de Ferro",
+          "Version": "v1",
+          "Url": "https://localhost:5051/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Hulk",
+      "Config": [
+        {
+          "Name": "Hulk",
+          "Version": "v1",
+          "Url": "https://localhost:6051/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "PanteraNegra",
+      "Config": [
+        {
+          "Name": "Pantera Negra",
+          "Version": "v1",
+          "Url": "https://localhost:7051/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Thor",
+      "Config": [
+        {
+          "Name": "Thor",
+          "Version": "v1",
+          "Url": "https://localhost:8051/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "ViuvaNegra",
+      "Config": [
+        {
+          "Name": "Viuva Negra",
+          "Version": "v1",
+          "Url": "https://localhost:9051/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

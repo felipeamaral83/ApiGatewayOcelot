@@ -10,8 +10,9 @@
         }
       ],
       "UpstreamPathTemplate": "/panteranegra",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "Key": "panteranegra"
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "PanteraNegra",
+      "SwaggerKey": "PanteraNegra"
     }
   ]
 }

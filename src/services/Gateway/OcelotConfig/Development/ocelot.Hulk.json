@@ -10,8 +10,9 @@
         }
       ],
       "UpstreamPathTemplate": "/hulk",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "Key": "hulk"
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "Hulk",
+      "SwaggerKey": "Hulk"
     }
   ]
 }

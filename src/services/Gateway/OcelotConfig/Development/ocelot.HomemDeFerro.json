@@ -10,8 +10,9 @@
         }
       ],
       "UpstreamPathTemplate": "/homemdeferro",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "Key": "homemdeferro"
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "HomemDeFerro",
+      "SwaggerKey": "HomemDeFerro"
     }
   ]
 }

@@ -10,8 +10,9 @@
         }
       ],
       "UpstreamPathTemplate": "/thor",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "Key": "thor"
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "Thor",
+      "SwaggerKey": "Thor"
     }
   ]
 }
