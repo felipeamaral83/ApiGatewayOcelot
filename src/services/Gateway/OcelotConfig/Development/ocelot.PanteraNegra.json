@@ -1,0 +1,17 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/heroi",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7051
+        }
+      ],
+      "UpstreamPathTemplate": "/panteranegra",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "Key": "panteranegra"
+    }
+  ]
+}

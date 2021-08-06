@@ -1,0 +1,17 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/heroi",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8051
+        }
+      ],
+      "UpstreamPathTemplate": "/thor",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "Key": "thor"
+    }
+  ]
+}
