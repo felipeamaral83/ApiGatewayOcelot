@@ -6,7 +6,7 @@
         {
           "Name": "Capitao America",
           "Version": "v1",
-          "Url": "https://localhost:4051/swagger/v1/swagger.json"
+          "Url": "http://localhost:40500/swagger/v1/swagger.json"
         }
       ]
     },
@@ -16,7 +16,7 @@
         {
           "Name": "Homem de Ferro",
           "Version": "v1",
-          "Url": "https://localhost:5051/swagger/v1/swagger.json"
+          "Url": "http://localhost:50500/swagger/v1/swagger.json"
         }
       ]
     },
@@ -26,7 +26,7 @@
         {
           "Name": "Hulk",
           "Version": "v1",
-          "Url": "https://localhost:6051/swagger/v1/swagger.json"
+          "Url": "http://localhost:60500/swagger/v1/swagger.json"
         }
       ]
     },
@@ -36,7 +36,7 @@
         {
           "Name": "Pantera Negra",
           "Version": "v1",
-          "Url": "https://localhost:7051/swagger/v1/swagger.json"
+          "Url": "http://localhost:10500/swagger/v1/swagger.json"
         }
       ]
     },
@@ -46,7 +46,7 @@
         {
           "Name": "Thor",
           "Version": "v1",
-          "Url": "https://localhost:8051/swagger/v1/swagger.json"
+          "Url": "http://localhost:20500/swagger/v1/swagger.json"
         }
       ]
     },
@@ -56,7 +56,7 @@
         {
           "Name": "Viuva Negra",
           "Version": "v1",
-          "Url": "https://localhost:9051/swagger/v1/swagger.json"
+          "Url": "http://localhost:30500/swagger/v1/swagger.json"
         }
       ]
     }

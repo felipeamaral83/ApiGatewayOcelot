@@ -2,17 +2,21 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/heroi",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 8051
+          "Port": 20500
         }
       ],
       "UpstreamPathTemplate": "/thor",
       "UpstreamHttpMethod": [ "Get" ],
       "Key": "Thor",
-      "SwaggerKey": "Thor"
+      "SwaggerKey": "Thor",
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "thor"
+      }
     }
   ]
 }

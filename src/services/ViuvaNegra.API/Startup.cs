@@ -37,6 +37,11 @@ namespace ViuvaNegra.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ViuvaNegra.API v1"));
             }
 
+            app.UseCors(option => option
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

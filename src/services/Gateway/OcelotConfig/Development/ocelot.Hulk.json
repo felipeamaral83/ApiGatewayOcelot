@@ -2,17 +2,21 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/heroi",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 6051
+          "Port": 60500
         }
       ],
       "UpstreamPathTemplate": "/hulk",
       "UpstreamHttpMethod": [ "Get" ],
       "Key": "Hulk",
-      "SwaggerKey": "Hulk"
+      "SwaggerKey": "Hulk",
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "hulk"
+      }
     }
   ]
 }

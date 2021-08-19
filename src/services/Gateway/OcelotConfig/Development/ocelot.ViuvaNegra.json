@@ -2,17 +2,21 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/heroi",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 9051
+          "Port": 30500
         }
       ],
       "UpstreamPathTemplate": "/viuvanegra",
       "UpstreamHttpMethod": [ "Get" ],
       "Key": "ViuvaNegra",
-      "SwaggerKey": "ViuvaNegra"
+      "SwaggerKey": "ViuvaNegra",
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "viuvanegra"
+      }
     }
   ]
 }

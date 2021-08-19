@@ -2,17 +2,21 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/heroi",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7051
+          "Port": 10500
         }
       ],
       "UpstreamPathTemplate": "/panteranegra",
       "UpstreamHttpMethod": [ "Get" ],
       "Key": "PanteraNegra",
-      "SwaggerKey": "PanteraNegra"
+      "SwaggerKey": "PanteraNegra",
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "panteranegra"
+      }
     }
   ]
 }

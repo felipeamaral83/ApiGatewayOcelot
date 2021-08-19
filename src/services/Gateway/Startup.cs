@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using MMLib.SwaggerForOcelot.DependencyInjection;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Ocelot.Cache.CacheManager;
 using System.IO;
 
 namespace Gateway
@@ -38,8 +39,12 @@ namespace Gateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOcelot(Configuration);
-            
+            services.AddOcelot(Configuration)
+                .AddCacheManager(x =>
+                {
+                    x.WithDictionaryHandle();
+                });
+
             services.AddSwaggerForOcelot(Configuration, (x) =>
             {
                 x.GenerateDocsForAggregates = true;

@@ -2,17 +2,21 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/heroi",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 4051
+          "Port": 40500
         }
       ],
       "UpstreamPathTemplate": "/capitaoamerica",
       "UpstreamHttpMethod": [ "Get" ],
       "Key": "CapitaoAmerica",
-      "SwaggerKey": "CapitaoAmerica"
+      "SwaggerKey": "CapitaoAmerica",
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "capitaoamerica"
+      }
     }
   ]
 }
