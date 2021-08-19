@@ -15,7 +15,7 @@
       "SwaggerKey": "CapitaoAmerica",
       "FileCacheOptions": {
         "TtlSeconds": 60,
-        "Region": "capitaoamerica"
+        "Region": "CapitaoAmerica"
       }
     }
   ]

@@ -15,7 +15,7 @@
       "SwaggerKey": "Thor",
       "FileCacheOptions": {
         "TtlSeconds": 60,
-        "Region": "thor"
+        "Region": "Thor"
       }
     }
   ]

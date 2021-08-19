@@ -15,7 +15,7 @@
       "SwaggerKey": "Hulk",
       "FileCacheOptions": {
         "TtlSeconds": 60,
-        "Region": "hulk"
+        "Region": "Hulk"
       }
     }
   ]

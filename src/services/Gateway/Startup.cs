@@ -6,9 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MMLib.SwaggerForOcelot.DependencyInjection;
+using Ocelot.Cache.CacheManager;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-using Ocelot.Cache.CacheManager;
 using System.IO;
 
 namespace Gateway
@@ -26,7 +26,8 @@ namespace Gateway
                 .SetBasePath(webHostEnvironment.ContentRootPath)
                 .AddJsonFile("appsettings.json", true, true)
                 .AddJsonFile($"appsettings.{webHostEnvironment.EnvironmentName}.json", true, true)
-                .AddOcelot(ocelotConfigPath, webHostEnvironment)
+                .AddOcelot(webHostEnvironment) // .AddJsonFile("ocelot.json", true, true)
+                // Configuração para o swagger
                 .AddOcelotWithSwaggerSupport((x) =>
                 {
                     x.Folder = ocelotConfigPath;
@@ -39,16 +40,17 @@ namespace Gateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // services.AddOcelot(Configuration); Suficiente para o funcionamento do Ocelot (sem cache)
+
             services.AddOcelot(Configuration)
+                // Configuração para habilitar o cache
                 .AddCacheManager(x =>
                 {
                     x.WithDictionaryHandle();
                 });
 
-            services.AddSwaggerForOcelot(Configuration, (x) =>
-            {
-                x.GenerateDocsForAggregates = true;
-            });
+            // Serviço para funcionar o swagger
+            services.AddSwaggerForOcelot(Configuration);
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
         }
@@ -62,6 +64,8 @@ namespace Gateway
             }
 
             app.UseStaticFiles();
+
+            app.UseSwagger();
 
             app.UseSwaggerForOcelotUI(opt =>
             {
@@ -80,6 +84,7 @@ namespace Gateway
                 });
             });
 
+            // Middleware
             app.UseOcelot().Wait();
         }
     }

@@ -15,7 +15,7 @@
       "SwaggerKey": "ViuvaNegra",
       "FileCacheOptions": {
         "TtlSeconds": 60,
-        "Region": "viuvanegra"
+        "Region": "ViuvaNegra"
       }
     }
   ]

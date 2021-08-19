@@ -15,7 +15,7 @@
       "SwaggerKey": "PanteraNegra",
       "FileCacheOptions": {
         "TtlSeconds": 60,
-        "Region": "panteranegra"
+        "Region": "PanteraNegra"
       }
     }
   ]

@@ -15,7 +15,7 @@
       "SwaggerKey": "HomemDeFerro",
       "FileCacheOptions": {
         "TtlSeconds": 60,
-        "Region": "homemdeferro"
+        "Region": "HomemDeFerro"
       }
     }
   ]
